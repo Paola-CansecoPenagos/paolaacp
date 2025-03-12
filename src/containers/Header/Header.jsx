@@ -50,7 +50,7 @@ const Header = () => {
   <div className="app__header-picture">
     <picture>
       <source srcSet={images.bg.webp} type="image/webp" />
-      <img src={images.bg.original} alt="profile_bg" />
+      <img src={images.bg.original} alt="profile_bg" width="100%" height="auto" />
     </picture>
   </div>
   <motion.img

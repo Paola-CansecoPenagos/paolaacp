@@ -30,6 +30,8 @@ const Navbar = () => {
           <img
             src={require("../../assets/logonavdar.png")}
             alt="Logo"
+            width="100%" 
+            height="auto"
             className="app__logo"
             style={{ width: "150px", height: "auto", cursor: "pointer" }}
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}

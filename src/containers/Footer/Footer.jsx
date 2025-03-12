@@ -94,7 +94,7 @@ const Footer = () => {
           <div className="app__flex">
             <input
               type="text"
-              className={`p-text ${mode}`}
+              className={`p-text`}
               placeholder={t("contactS.name")}
               name="name"
             />
@@ -102,7 +102,7 @@ const Footer = () => {
           <div className="app__flex">
             <input
               type="email"
-              className={`p-text ${mode}`}
+              className={`p-text`}
               placeholder={t("contactS.email")}
               name="email"
             />
@@ -111,7 +111,7 @@ const Footer = () => {
             <textarea
               name="message"
               placeholder={t("contactS.message")}
-              className={`p-text ${mode}`}
+              className={`p-text`}
             ></textarea>
           </div>
           <button
