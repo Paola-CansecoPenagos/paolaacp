@@ -18,7 +18,7 @@ import sql from "../assets/sql.png";
 import typescript from "../assets/typescript.png";
 import vue from "../assets/vue.png";
 
-import circle from "../assets/circle.svg";
+import circle from "../assets/circle.webp";
 import bg from "../assets/PaolaACP.png";
 
 import cerciberseguridad from "../assets/cerciberseguridad.png";

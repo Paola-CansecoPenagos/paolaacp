@@ -25,13 +25,17 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img
-          src={require("../../assets/logonavdar.png")}
-          alt="Logo"
-          className="app__logo"
-          style={{ width: "150px", height: "auto", cursor: "pointer" }} 
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} 
-        />
+        <picture>
+          <source srcSet={require("../../assets/logonavdar.webp")} type="image/webp" />
+          <img
+            src={require("../../assets/logonavdar.png")}
+            alt="Logo"
+            className="app__logo"
+            style={{ width: "150px", height: "auto", cursor: "pointer" }}
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          />
+        </picture>
+
       </div>
       <ul className={`app__navbar-links ${mode}`}>
         {["home", "about", "work", "skills", "testimonials", "contact"].map((item) => (

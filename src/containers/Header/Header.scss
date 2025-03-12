@@ -1,18 +1,15 @@
 #home {
   position: relative;
-  background: url("../../assets/bgIMG.png");
+  background: url("../../assets/bgIMG.webp");  
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  &.dark {
-    background-image: url("../../assets/bgIMG.png"); /* Imagen para el modo oscuro */
-  }
 
   @media screen and (max-width: 768px) {
-    background-size: contain; // Hace que la imagen se ajuste sin recortarse
-    background-position: top; // Asegura que la imagen se vea bien en móviles
+    background-size: contain;
+    background-position: top; 
   }
-  // disable the default padding styles
+
   .app__wrapper {
     padding: 0;
 
@@ -131,8 +128,6 @@
     }
   }
 
-  // circles with different height & width
-
   div:nth-child(1) {
     width: 100px;
     height: 100px;
@@ -191,6 +186,13 @@
     width: 100%;
     object-fit: contain;
     z-index: 1;
+  }
+
+  .app__header-picture {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1; 
   }
 
   .overlay_circle {

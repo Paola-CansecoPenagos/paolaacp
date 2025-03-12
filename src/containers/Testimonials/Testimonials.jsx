@@ -11,7 +11,7 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      imageurl: "https://cdn3.pixelcut.app/7/20/uncrop_hero_bdf08a8ca6.jpg",
+      imageurl: "https://via.placeholder.com/150",
       feedback: "Paola hizo un trabajo increíble, su código es limpio y eficiente.Paola hizo un trabajo increíble, su código es limpio y eficiente.Paola hizo un trabajo increíble, su código es limpio y eficiente.",
       name: "Juan Pérez",
       company: "Tech Solutions",

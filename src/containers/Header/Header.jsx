@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const { mode } = useTheme();
-  const { t } = useTranslation(); 
+  const { t } = useTranslation();
   const scaleVariants = {
     whileInView: {
       scale: [0, 1],
@@ -43,19 +43,26 @@ const Header = () => {
         </div>
       </motion.div>
       <motion.div
-        whileInView={{ opacity: [0, 1] }}
-        transition={{ duration: 0.5, delayChildren: 0.5 }}
-        className="app__header-img"
-      >
-        <img src={images.bg.original} alt="profile_bg" />
-        <motion.img
-          whileInView={{ scale: [0, 1] }}
-          transition={{ duration: 1, ease: "easeInOut" }}
-          src={images.circle.original}
-          alt="profile_circle"
-          className="overlay_circle"
-        />
-      </motion.div>
+  whileInView={{ opacity: [0, 1] }}
+  transition={{ duration: 0.5, delayChildren: 0.5 }}
+  className="app__header-img"
+>
+  <div className="app__header-picture">
+    <picture>
+      <source srcSet={images.bg.webp} type="image/webp" />
+      <img src={images.bg.original} alt="profile_bg" />
+    </picture>
+  </div>
+  <motion.img
+    whileInView={{ scale: [0, 1] }}
+    transition={{ duration: 1, ease: "easeInOut" }}
+    src={images.circle.original}
+    alt="profile_circle"
+    className="overlay_circle"
+  />
+</motion.div>
+
+
       <motion.div
         variants={scaleVariants}
         whileInView={scaleVariants.whileInView}
