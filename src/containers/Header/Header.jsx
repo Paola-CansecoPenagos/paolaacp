@@ -49,11 +49,12 @@ const Header = () => {
       >
         <div className="app__header-picture">
           <picture>
-            <source srcset={images.bg.webp} media="(max-width: 600px)" />
-            <img src={images.bg.original} alt="profile_bg" width="100%" height="auto" />
+            <source srcSet={images.bg.webp} type="image/webp" />
+            <source srcSet={images.bg.original} type="image/png" />
+            <img src={images.bg.webp} alt="profile_bg" width="100%" height="auto" />
           </picture>
-
         </div>
+
         <motion.img
           whileInView={{ scale: [0, 1] }}
           transition={{ duration: 1, ease: "easeInOut" }}
