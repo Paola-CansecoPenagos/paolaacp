@@ -26,11 +26,11 @@ const Navbar = () => {
     <nav className="app__navbar">
       <div className="app__navbar-logo">
         <picture>
-          <source srcSet={require("../../assets/logonavdar.webp")} type="image/webp" />
+          <source srcSet={require("https://paolaacp16.vercel.app/static/media/logonavdar.6c1806855d25e2095e5d.webp")} type="image/webp" />
           <img
-            src={require("../../assets/logonavdar.png")}
+            src={require("https://paolaacp16.vercel.app/static/media/logonavdar.6c1806855d25e2095e5d.webp")}
             alt="Logo"
-            width="100%" 
+            width="150%" 
             height="auto"
             className="app__logo"
             style={{ width: "150px", height: "auto", cursor: "pointer" }}

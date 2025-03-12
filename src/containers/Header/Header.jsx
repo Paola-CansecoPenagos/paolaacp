@@ -43,24 +43,25 @@ const Header = () => {
         </div>
       </motion.div>
       <motion.div
-  whileInView={{ opacity: [0, 1] }}
-  transition={{ duration: 0.5, delayChildren: 0.5 }}
-  className="app__header-img"
->
-  <div className="app__header-picture">
-    <picture>
-      <source srcSet={images.bg.webp} type="image/webp" />
-      <img src={images.bg.original} alt="profile_bg" width="100%" height="auto" />
-    </picture>
-  </div>
-  <motion.img
-    whileInView={{ scale: [0, 1] }}
-    transition={{ duration: 1, ease: "easeInOut" }}
-    src={images.circle.original}
-    alt="profile_circle"
-    className="overlay_circle"
-  />
-</motion.div>
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 0.5, delayChildren: 0.5 }}
+        className="app__header-img"
+      >
+        <div className="app__header-picture">
+          <picture>
+            <source srcset="https://paolaacp16.vercel.app/static/media/PaolaACP.8a705bf6e0518bbd43f3-small.webp" media="(max-width: 600px)" />
+            <img src="https://paolaacp16.vercel.app/static/media/PaolaACP.8a705bf6e0518bbd43f3.webp" alt="profile_bg" width="100%" height="auto" />
+          </picture>
+
+        </div>
+        <motion.img
+          whileInView={{ scale: [0, 1] }}
+          transition={{ duration: 1, ease: "easeInOut" }}
+          src={images.circle.original}
+          alt="profile_circle"
+          className="overlay_circle"
+        />
+      </motion.div>
 
 
       <motion.div
