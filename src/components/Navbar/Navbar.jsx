@@ -27,9 +27,9 @@ const Navbar = () => {
     <nav className="app__navbar">
       <div className="app__navbar-logo">
         <picture>
-          <source srcSet={images.logonavbar.webp} type="image/webp" />
+          <source srcSet={require("../../assets/logonavdar.webp")} type="image/webp" />
           <img
-            src={images.logonavbar.original}
+            src={require("../../assets/logonavdar.png")}
             alt="Logo"
             className="app__logo"
             style={{ width: "150px", height: "auto", cursor: "pointer" }}
@@ -74,9 +74,7 @@ const Navbar = () => {
             <ul className={`app__navbar-links ${mode}`}>
               {["home", "about", "work", "skills", "testimonials", "contact"].map((item) => (
                 <li key={item} style={{ display: "flex", alignItems: "center" }}>
-                  <a href={`#${item}`} onClick={() => setToggle(false)}>
-                    {t(item)}
-                  </a>
+                  <a href={`#${item}`} onClick={() => setToggle(false)}>{t(item)}</a>
                 </li>
               ))}
               <li style={{ display: "flex", alignItems: "center", gap: "10px" }}>
@@ -96,7 +94,7 @@ const Navbar = () => {
                   aria-label="Cambiar idioma"  
                   style={{ display: "flex", alignItems: "center", border: "none", background: "none", cursor: "pointer" }}
                 >
-                  <span style={{ color: iconColor, fontSize: "16px", fontWeight: "semi-bold"}}>
+                  <span style={{ color: iconColor, fontSize: "16px", fontWeight: "semi-bold" }}>
                     {currentLanguage}
                   </span> 
                 </button>
