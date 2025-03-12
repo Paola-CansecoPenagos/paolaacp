@@ -60,7 +60,7 @@ import typescriptWebp from "../assets/typescript.webp";
 import vueWebp from "../assets/vue.webp";
 
 import bgWebp from "../assets/PaolaACP.webp";
-import logonavbarWebp from "../assets/logonavdar.webp"
+import logonavbarWebp from "../assets/logonavdar1.webp"
 
 import cerciberseguridadWebp from "../assets/cerciberseguridad.webp";
 import cercloudfoundationsWebp from "../assets/cercloudfoundations.webp";

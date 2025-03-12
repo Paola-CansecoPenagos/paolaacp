@@ -26,6 +26,11 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
+        <picture>
+          <source srcSet={images.logonavbar.webp} type="image/webp" />
+          <source srcSet={images.logonavbar.original} type="image/png" />
+          <img src={images.logonavbar.webp} alt="profile_bg" width="150px" height="auto" />
+        </picture>
         <img
           src={require("../../assets/logonavdar.webp")}
           alt="Logo"
