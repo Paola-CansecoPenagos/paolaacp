@@ -144,7 +144,7 @@ const Skills = () => {
                           data-tip
                           data-for={uniqueKey}
                         >
-                          <h4 className={`bold-text ${mode}`}>{work.name}</h4>
+                          <h1 className={`bold-text ${mode}`}>{work.name}</h1>
                           <p className={`p-text ${mode}`}>{work.company}</p>
                         </motion.div>
                         <ReactTooltip

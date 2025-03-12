@@ -49,8 +49,8 @@ const Header = () => {
       >
         <div className="app__header-picture">
           <picture>
-            <source srcset="https://paolaacp16.vercel.app/static/media/PaolaACP.8a705bf6e0518bbd43f3-small.webp" media="(max-width: 600px)" />
-            <img src="https://paolaacp16.vercel.app/static/media/PaolaACP.8a705bf6e0518bbd43f3.webp" alt="profile_bg" width="100%" height="auto" />
+            <source srcset={images.bg.webp} media="(max-width: 600px)" />
+            <img src={images.bg.original} alt="profile_bg" width="100%" height="auto" />
           </picture>
 
         </div>

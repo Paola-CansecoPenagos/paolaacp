@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
 import { HiMenuAlt4, HiX, HiSun, HiMoon } from "react-icons/hi";
-import { MdGTranslate } from "react-icons/md";
 import { motion } from "framer-motion";
 import { useTheme } from "../../hooks/useTheme";
 import { useTranslation } from "react-i18next";
 import "../../i18n";
+import { images } from "../../constants";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -21,23 +21,21 @@ const Navbar = () => {
   };
 
   const iconColor = mode === "dark" ? "#f0f0f0" : "#6b7688";
+  const currentLanguage = i18n.language === "es" ? "EN" : "ES"; 
 
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
         <picture>
-          <source srcSet={require("https://paolaacp16.vercel.app/static/media/logonavdar.6c1806855d25e2095e5d.webp")} type="image/webp" />
+          <source srcSet={images.logonavbar.webp} type="image/webp" />
           <img
-            src={require("https://paolaacp16.vercel.app/static/media/logonavdar.6c1806855d25e2095e5d.webp")}
+            src={images.logonavbar.original}
             alt="Logo"
-            width="150%" 
-            height="auto"
             className="app__logo"
             style={{ width: "150px", height: "auto", cursor: "pointer" }}
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           />
         </picture>
-
       </div>
       <ul className={`app__navbar-links ${mode}`}>
         {["home", "about", "work", "skills", "testimonials", "contact"].map((item) => (
@@ -49,6 +47,7 @@ const Navbar = () => {
           <button
             onClick={toggleMode}
             className="mode-toggle"
+            aria-label={mode === "dark" ? "Cambiar a modo claro" : "Cambiar a modo oscuro"} 
             style={{ display: "flex", alignItems: "center", border: "none", background: "none", cursor: "pointer" }}
           >
             {mode === "dark" ? <HiSun size={20} color={iconColor} /> : <HiMoon size={20} color={iconColor} />}
@@ -58,9 +57,12 @@ const Navbar = () => {
           <button
             onClick={changeLanguage}
             className="lang-toggle"
+            aria-label="Cambiar idioma"  
             style={{ display: "flex", alignItems: "center", border: "none", background: "none", cursor: "pointer" }}
           >
-            <MdGTranslate size={20} color={iconColor} />
+            <span style={{ color: iconColor, fontSize: "13px", fontWeight: "semi-bold", textTransform: "uppercase" }}>
+              {currentLanguage}
+            </span>
           </button>
         </li>
       </ul>
@@ -76,12 +78,12 @@ const Navbar = () => {
                     {t(item)}
                   </a>
                 </li>
-
               ))}
               <li style={{ display: "flex", alignItems: "center", gap: "10px" }}>
                 <button
                   onClick={toggleMode}
                   className="mode-toggle"
+                  aria-label={mode === "dark" ? "Cambiar a modo claro" : "Cambiar a modo oscuro"}  
                   style={{ display: "flex", alignItems: "center", border: "none", background: "none", cursor: "pointer" }}
                 >
                   {mode === "dark" ? <HiSun size={20} color={iconColor} /> : <HiMoon size={20} color={iconColor} />}
@@ -91,9 +93,12 @@ const Navbar = () => {
                 <button
                   onClick={changeLanguage}
                   className="lang-toggle"
+                  aria-label="Cambiar idioma"  
                   style={{ display: "flex", alignItems: "center", border: "none", background: "none", cursor: "pointer" }}
                 >
-                  <MdGTranslate size={20} color={iconColor} />
+                  <span style={{ color: iconColor, fontSize: "16px", fontWeight: "semi-bold"}}>
+                    {currentLanguage}
+                  </span> 
                 </button>
               </li>
             </ul>

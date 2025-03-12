@@ -11,6 +11,7 @@ const SocialMedia = () => {
           href="https://www.linkedin.com/in/paola-acp/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="LinkedIn Profile of Paola ACP" // Agregar texto alternativo
         >
           <BsLinkedin />
         </a>
@@ -20,6 +21,7 @@ const SocialMedia = () => {
           href="https://github.com/Paola-CansecoPenagos" 
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="GitHub Profile of Paola ACP" // Agregar texto alternativo
         >
           <BsGithub />
         </a>
@@ -29,6 +31,7 @@ const SocialMedia = () => {
           href="mailto:paolaacp.dev@gmail.com" 
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Send Email to Paola ACP" // Agregar texto alternativo
         >
           <FaEnvelope />
         </a>
@@ -38,6 +41,7 @@ const SocialMedia = () => {
           href="https://wa.me/+529651033354" 
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="WhatsApp Contact Paola ACP" // Agregar texto alternativo
         >
           <FaWhatsapp />
         </a>
@@ -47,6 +51,7 @@ const SocialMedia = () => {
           href="https://t.me/PaolaACP" 
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Telegram Contact Paola ACP" // Agregar texto alternativo
         >
           <FaTelegramPlane />
         </a>
@@ -56,6 +61,7 @@ const SocialMedia = () => {
           href="/cv" 
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Download CV of Paola ACP" // Agregar texto alternativo
         >
           <HiDownload />
         </a>

@@ -47,8 +47,8 @@ const Testimonials = () => {
             <div className={`app__testimonial-content ${mode}`}>
               <p className={`p-text ${mode}`}>{test.feedback}</p>
               <div>
-                <h4 className={`bold-text ${mode}`}>{test.name}</h4>
-                <h5 className={`bold-text ${mode}`}>{test.company}</h5>
+                <h1 className={`bold-text ${mode}`}>{test.name}</h1>
+                <h2 className={`bold-text ${mode}`}>{test.company}</h2>
               </div>
             </div>
           </div>

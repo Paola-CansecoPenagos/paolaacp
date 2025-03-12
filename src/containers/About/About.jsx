@@ -76,6 +76,7 @@ const About = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="app__profile-link"
+                  aria-label={`Ver ${about.title}`} 
                 >
                   <AiFillEye size={20} /> 
                 </a>

@@ -20,6 +20,7 @@ import vue from "../assets/vue.png";
 
 import circle from "../assets/circle.webp";
 import bg from "../assets/PaolaACP.png";
+import logonavbar from "../assets/logonavdar.png"
 
 import cerciberseguridad from "../assets/cerciberseguridad.png";
 import cercloudfoundations from "../assets/cercloudfoundations.png";
@@ -59,6 +60,7 @@ import typescriptWebp from "../assets/typescript.webp";
 import vueWebp from "../assets/vue.webp";
 
 import bgWebp from "../assets/PaolaACP.webp";
+import logonavbarWebp from "../assets/logonavdar.webp"
 
 import cerciberseguridadWebp from "../assets/cerciberseguridad.webp";
 import cercloudfoundationsWebp from "../assets/cercloudfoundations.webp";
@@ -112,4 +114,5 @@ export default {
   bg: { original: bg, webp: bgWebp },
   inaoe: { original: inaoe, webp: inaoeWebp },
   cybacti: { original: cybacti, webp: cybactiWebp },
+  logonavbar: { original: logonavbar, webp: logonavbarWebp },
 };
