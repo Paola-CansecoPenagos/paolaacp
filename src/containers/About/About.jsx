@@ -14,38 +14,38 @@ const About = () => {
   const abouts = [
     {
       title: "UP Chiapas",
-      description: "certificates.upchiapas", // Cambia la descripción a la clave de traducción
-      imgUrl: images.upchiapas,
+      description: "certificates.upchiapas", 
+      imgUrl: { webp: images.upchiapas.webp, original: images.upchiapas.original },
       url: "https://www.upchiapas.edu.mx/", 
     },
     {
       title: "AWS Training and Certification",
-      description: "AWS Academy Cloud Operations", // Cambia la descripción a la clave de traducción
-      imgUrl: images.cercloudoperations,
+      description: "AWS Academy Cloud Operations", 
+      imgUrl: { webp: images.cercloudoperations.webp, original: images.cercloudoperations.original },
       url: "https://www.credly.com/badges/52b71960-098f-4052-be21-9ceb3c516017/public_url",
     },
     {
       title: "AWS Training and Certification",
-      description: "AWS Academy Cloud Foundations", // Cambia la descripción a la clave de traducción
-      imgUrl: images.cercloudfoundations,
+      description: "AWS Academy Cloud Foundations", 
+      imgUrl: { webp: images.cercloudfoundations.webp, original: images.cercloudfoundations.original },
       url: "https://www.credly.com/badges/65cee2ee-1eef-44b3-b3ce-11671e6a322e/public_url", 
     },
     {
       title: "Coursera",
-      description: "certificates.courseraCybersecurity", // Cambia la descripción a la clave de traducción
-      imgUrl: images.cerciberseguridad,
+      description: "certificates.courseraCybersecurity", 
+      imgUrl: { webp: images.cerciberseguridad.webp, original: images.cerciberseguridad.original },
       url: "https://www.credly.com/badges/0f3f881f-28f4-4005-8a53-42e6da7dadc4/public_url", 
     },
     {
       title: "Coursera",
-      description: "certificates.courseraOWASP", // Cambia la descripción a la clave de traducción
-      imgUrl: images.cerowasap,
+      description: "certificates.courseraOWASP", 
+      imgUrl: { webp: images.cerowasap.webp, original: images.cerowasap.original },
       url: "https://coursera.org/verify/IJD0QYURLMXM", 
     },
     {
       title: "Udemy",
-      description: "certificates.udemyWebScraping", // Cambia la descripción a la clave de traducción
-      imgUrl: images.cerudemy,
+      description: "certificates.udemyWebScraping", 
+      imgUrl: { webp: images.cerudemy.webp, original: images.cerudemy.original },
       url: "https://www.udemy.com/certificate/UC-411aee69-8270-4b37-8956-6a8c0dee92bd/", 
     },
   ];  
@@ -66,7 +66,10 @@ const About = () => {
             key={about.title + index}
           >
             <div className="app__profile-img-container">
-              <img src={about.imgUrl} alt={about.title} />
+              <picture>
+                <source srcSet={about.imgUrl.webp} type="image/webp" />
+                <img src={about.imgUrl.original} alt={about.title} />
+              </picture>
               {about.url && (
                 <a
                   href={about.url}
@@ -74,7 +77,7 @@ const About = () => {
                   rel="noopener noreferrer"
                   className="app__profile-link"
                 >
-                  <AiFillEye size={20} /> {/* Ícono de ojo */}
+                  <AiFillEye size={20} /> 
                 </a>
               )}
             </div>
@@ -84,7 +87,6 @@ const About = () => {
             <p className={`p-text ${mode}`} style={{ marginTop: "10px" }}>
               {t(about.description)} 
             </p>
-
           </motion.div>
         ))}
       </div>

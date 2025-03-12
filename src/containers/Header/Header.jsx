@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const { mode } = useTheme();
-  const { t } = useTranslation(); // Use translation hook
+  const { t } = useTranslation(); 
   const scaleVariants = {
     whileInView: {
       scale: [0, 1],
@@ -47,11 +47,11 @@ const Header = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-img"
       >
-        <img src={images.bg} alt="profile_bg" />
+        <img src={images.bg.original} alt="profile_bg" />
         <motion.img
           whileInView={{ scale: [0, 1] }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          src={images.circle}
+          src={images.circle.original}
           alt="profile_circle"
           className="overlay_circle"
         />
@@ -61,7 +61,7 @@ const Header = () => {
         whileInView={scaleVariants.whileInView}
         className="app__header-circles"
       >
-        {[images.php, images.sql, images.python].map((circle, index) => (
+        {[images.php.webp, images.sql.webp, images.python.webp].map((circle, index) => (
           <div
             className={`circle-cmp ${mode} app__flex`}
             key={`circle-${index}`}

@@ -56,13 +56,19 @@ const Footer = () => {
 
       <div className="app__footer-cards">
         <div className="app__footer-card">
-          <img src={images.email} alt="email" />
+          <picture>
+            <source srcSet={images.email.webp} type="image/webp" />
+            <img src={images.email.original} alt="email" />
+          </picture>
           <a href="mailto:paolaacp.dev@gmail.com" className="p-text">
             paolaacp.dev@gmail.com
           </a>
         </div>
         <div className="app__footer-card">
-          <img src={images.mobile} alt="mobile" />
+          <picture>
+            <source srcSet={images.mobile.webp} type="image/webp" />
+            <img src={images.mobile.original} alt="mobile" />
+          </picture>
           <a href="tel: +52 9651033352" className="p-text">
             +52 965 103 33 54
           </a>

@@ -95,7 +95,11 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className={`head-text ${mode}`}>{t("experiences.title1")} <span>{t("experiences.title2")}</span> <br />{t("experiences.title3")}<span>{t("experiences.title4")}</span></h2>
+      <h2 className={`head-text ${mode}`}>
+        {t("experiences.title1")} <span>{t("experiences.title2")}</span> <br />
+        {t("experiences.title3")}
+        <span>{t("experiences.title4")}</span>
+      </h2>
 
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
@@ -110,7 +114,10 @@ const Skills = () => {
                 className="app__flex"
                 style={{ backgroundColor: "#EDF2F8" }}
               >
-                <img src={skill.icon} alt={skill.name} />
+                <picture>
+                  <source srcSet={skill.icon.webp} type="image/webp" />
+                  <img src={skill.icon.original} alt={skill.name} />
+                </picture>
               </div>
               <p className={`p-text ${mode}`}>{skill.name}</p>
             </motion.div>

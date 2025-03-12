@@ -108,8 +108,10 @@ const Work = () => {
         {filterWork.map((work, index) => (
           <div className={`app__work-item ${mode} app_flex`} key={index}>
             <div className="app__work-img app__flex">
-              <img src={work.imgUrl} alt={work.title} />
-
+              <picture>
+                <source srcSet={work.imgUrl.webp} type="image/webp" />
+                <img src={work.imgUrl.original} alt={work.title} />
+              </picture>
               <motion.div
                 whileHover={{ opacity: [0, 1] }}
                 transition={{
