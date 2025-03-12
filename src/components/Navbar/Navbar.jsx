@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { useTheme } from "../../hooks/useTheme";
 import { useTranslation } from "react-i18next";
 import "../../i18n";
-import { images } from "../../constants";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
