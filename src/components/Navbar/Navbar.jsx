@@ -26,13 +26,12 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        {/* <img
-          src={require("../../assets/logonavdar.png")}
+        <img
+          src={require("../../assets/logonavdar.webp")}
           alt="Logo"
           className="app__logo"
           style={{ width: "150px", height: "auto" }}
-        /> */}
-       <img src={images.logonavbar.webp} alt="profile_bg" style={{ width: "120px", height: "auto" }} />
+        />
       </div>
       <ul className={`app__navbar-links ${mode}`}>
         {["home", "about", "work", "skills", "testimonials", "contact"].map((item) => (
