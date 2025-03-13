@@ -53,7 +53,7 @@ const Header = () => {
               <picture>
                 <source srcSet={images.bg.webp} type="image/webp" />
                 <source srcSet={images.bg.original} type="image/png" />
-                <img src={images.bg.webp} alt="profile_bg" width="100%" height="auto" />
+                <img src={images.bg.webp} alt="profile_bg" />
               </picture>
             </div>
           )}

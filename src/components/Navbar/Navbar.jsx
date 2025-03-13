@@ -34,7 +34,6 @@ const Navbar = () => {
           src={require("../../assets/logonavdar.webp")}
           alt="Logo"
           className="app__logo"
-          style={{ width: "150px", height: "auto" }}
         />
       </div>
       <ul className={`app__navbar-links ${mode}`}>
