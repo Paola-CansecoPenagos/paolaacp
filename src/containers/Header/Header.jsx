@@ -23,10 +23,12 @@ const Header = () => {
   return (
     <div className={`app__header app__flex`}>
       <motion.div
-        whileInView={{ x: [-100, 0], opacity: [0, 1] }}
-        transition={{ duration: 0.5 }}
+        initial={{ opacity: 1 }} // Antes: opacity: 0
+        whileInView={{ x: [-100, 0] }}
+        transition={{ duration: 0.3 }} // Antes: 0.5
         className="app__header-info"
       >
+
         <div className="app__header-badge">
           <div className={`badge-cmp ${mode} app__flex`}>
             <span>👋</span>
@@ -47,19 +49,14 @@ const Header = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-img"
       >
+
         <div className="app__header-picture">
-          {window.innerWidth > 768 && (
-            <div className="app__header-picture">
-              <picture>
-                <source srcSet={images.bg.webp} type="image/webp" />
-                <source srcSet={images.bg.original} type="image/png" />
-                <img src={images.bg.webp} alt="profile_bg" />
-              </picture>
-            </div>
-          )}
-
+          <picture>
+            <source srcSet={images.bg.webp} type="image/webp" />
+            <source srcSet={images.bg.original} type="image/png" />
+            <img src={images.bg.webp} alt="profile_bg" />
+          </picture>
         </div>
-
         <motion.img
           whileInView={{ scale: [0, 1] }}
           transition={{ duration: 1, ease: "easeInOut" }}

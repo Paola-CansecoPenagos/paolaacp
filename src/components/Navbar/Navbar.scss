@@ -28,15 +28,20 @@
   justify-content: flex-start;
   align-items: center;
 
-  img {
-    width: 150px;
-    height: auto;
+  // img {
+  //   width: 150px;
+  //   height: auto;
 
-    @media screen and (min-width: 2000px) {
-      width: 180px;
-      height: 40px;
-    }
-  }
+  //   @media screen and (min-width: 2000px) {
+  //     width: 180px;
+  //     height: 40px;
+  //   }
+  // }
+}
+
+.app__navbar-logo img {
+  width: 150px;
+  height: 50px; 
 }
 
 .app__navbar-links {
