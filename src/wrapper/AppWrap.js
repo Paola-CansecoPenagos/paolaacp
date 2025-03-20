@@ -3,8 +3,8 @@ import React from 'react'
 import { SocialMedia } from '../components'
 import { useTheme } from '../hooks/useTheme'
 const AppWrap = (Component, idName, className) => function HOC () {
-  const date = new Date()
-  const year = date.getFullYear()
+  // const date = new Date()
+  // const year = date.getFullYear()
   const {mode } = useTheme()
 
   return <div id={idName} className={`app__container ${mode}  ${className}`}>

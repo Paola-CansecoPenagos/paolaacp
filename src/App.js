@@ -5,7 +5,7 @@ import {
   Footer,
   Header,
   Skills,
-  Testimonials,
+  // Testimonials,
   Work,
 } from "./containers";
 import "./App.scss";

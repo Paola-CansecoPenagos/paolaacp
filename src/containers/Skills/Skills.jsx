@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 
 const Skills = () => {
   const { t } = useTranslation();
-  const [skills, setSkills] = useState([
+  const [skills] = useState([
     {
       name: "PHP",
       icon: images.php,
@@ -48,7 +48,7 @@ const Skills = () => {
     },
   ]);
 
-  const [experiences, setExperiences] = useState([
+  const [experiences] = useState([
     {
       year: 2023,
       works: [

@@ -6,13 +6,11 @@ import docker from  "../assets/docker.png";
 import figma from "../assets/figma.png";
 import flutter from "../assets/flutter.png";
 import git from "../assets/git.png";
-import graphql from "../assets/graphql.png";
 import html from "../assets/html.png";
 import javascript from "../assets/javascript.png";
 import node from "../assets/node.png";
 import python from "../assets/python.png";
 import react from "../assets/react.png";
-import redux from "../assets/redux.png";
 import php from "../assets/php.png";
 import sql from "../assets/sql.png";
 import typescript from "../assets/typescript.png";
@@ -47,20 +45,18 @@ import dockerWebp from "../assets/docker.webp";
 import figmaWebp from "../assets/figma.webp";
 import flutterWebp from "../assets/flutter.webp";
 import gitWebp from "../assets/git.webp";
-import graphqlWebp from "../assets/graphql.webp";
 import htmlWebp from "../assets/html.webp";
 import javascriptWebp from "../assets/javascript.webp";
 import nodeWebp from "../assets/node.webp";
 import pythonWebp from "../assets/python.webp";
 import reactWebp from "../assets/react.webp";
-import reduxWebp from "../assets/redux.webp";
 import phpWebp from "../assets/php.webp";
 import sqlWebp from "../assets/sql.webp";
 import typescriptWebp from "../assets/typescript.webp";
 import vueWebp from "../assets/vue.webp";
 
 import bgWebp from "../assets/PaolaACP.webp";
-import logonavbarWebp from "../assets/logonavdar1.webp"
+import logonavbarWebp from "../assets/logonavdar.webp"
 
 import cerciberseguridadWebp from "../assets/cerciberseguridad.webp";
 import cercloudfoundationsWebp from "../assets/cercloudfoundations.webp";
@@ -79,7 +75,7 @@ import cybactiWebp from "../assets/cybacti.webp";
 import inaoeWebp from "../assets/inaoe.webp";
 import fvndyWebp from "../assets/fvndy.webp";
 
-export default {
+const images = {
   fvndy: { original: fvndy, webp: fvndyWebp },
   bni: { original: bni, webp: bniWebp },
   reinapepiada: { original: reinapepiada, webp: reinapepiadaWebp },
@@ -99,14 +95,12 @@ export default {
   figma: { original: figma, webp: figmaWebp },
   flutter: { original: flutter, webp: flutterWebp },
   git: { original: git, webp: gitWebp },
-  graphql: { original: graphql, webp: graphqlWebp },
   html: { original: html, webp: htmlWebp },
   javascript: { original: javascript, webp: javascriptWebp },
   node: { original: node, webp: nodeWebp },
   python: { original: python, webp: pythonWebp },
   php: { original: php, webp: phpWebp },
   react: { original: react, webp: reactWebp },
-  redux: { original: redux, webp: reduxWebp },
   sql: { original: sql, webp: sqlWebp },
   typescript: { original: typescript, webp: typescriptWebp },
   vue: { original: vue, webp: vueWebp },
@@ -116,3 +110,5 @@ export default {
   cybacti: { original: cybacti, webp: cybactiWebp },
   logonavbar: { original: logonavbar, webp: logonavbarWebp },
 };
+
+export default images;
