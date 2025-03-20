@@ -11,10 +11,10 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      imageurl: "https://via.placeholder.com/150",
-      feedback: "Paola hizo un trabajo increíble, su código es limpio y eficiente.Paola hizo un trabajo increíble, su código es limpio y eficiente.Paola hizo un trabajo increíble, su código es limpio y eficiente.",
-      name: "Juan Pérez",
-      company: "Tech Solutions",
+      imageurl: "https://www.linkedin.com/in/asz/overlay/photo/",
+      feedback: "Desde su primer día, Paola demostró gran compromiso, dedicación y capacidad para perfeccionar sus conocimientos en las herramientas que ya dominaba, así como para aprender nuevas tecnologías. Ello la llevó a posicionarse como encargada del área de tecnología en la empresa, liderando con éxito diversos proyectos. Su habilidad para iterar rápidamente, proponer mejoras y comunicarse de manera efectiva con los stakeholders la convierte en una profesional altamente recomendable y valiosa para cualquier organización",
+      name: "Alejandro Stewens",
+      company: "",
     },
     {
       imageurl: "https://via.placeholder.com/150",

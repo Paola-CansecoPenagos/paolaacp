@@ -60,8 +60,8 @@ const Footer = () => {
             <source srcSet={images.email.webp} type="image/webp" />
             <img src={images.email.original} alt="email" />
           </picture>
-          <a href="mailto:paolaacp.dev@gmail.com" className="p-text">
-            paolaacp.dev@gmail.com
+          <a href="mailto:paolapenagos.dev@gmail.com" className="p-text">
+            paolapenagos.dev@gmail.com
           </a>
         </div>
         <div className="app__footer-card">

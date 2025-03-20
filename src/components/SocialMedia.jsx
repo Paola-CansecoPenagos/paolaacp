@@ -1,7 +1,7 @@
 import React from "react";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
-import { FaWhatsapp, FaTelegramPlane, FaEnvelope } from "react-icons/fa"; 
-import { HiDownload } from "react-icons/hi"; 
+import { FaWhatsapp, FaTelegramPlane, FaEnvelope } from "react-icons/fa";
+import { HiDownload } from "react-icons/hi";
 
 const SocialMedia = () => {
   return (
@@ -11,57 +11,58 @@ const SocialMedia = () => {
           href="https://www.linkedin.com/in/paola-acp/"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="LinkedIn Profile of Paola ACP" // Agregar texto alternativo
+          aria-label="LinkedIn Profile of Paola Canseco Penagos"
         >
           <BsLinkedin />
         </a>
       </div>
       <div>
         <a
-          href="https://github.com/Paola-CansecoPenagos" 
+          href="https://github.com/Paola-CansecoPenagos"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="GitHub Profile of Paola ACP" // Agregar texto alternativo
+          aria-label="GitHub Profile of Paola Canseco Penagos"
         >
           <BsGithub />
         </a>
       </div>
       <div>
         <a
-          href="mailto:paolaacp.dev@gmail.com" 
+          href="mailto:paolapenagos.dev@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Send Email to Paola ACP" // Agregar texto alternativo
+          aria-label="Send Email to Paola Canseco Penagos"
         >
           <FaEnvelope />
         </a>
       </div>
       <div>
         <a
-          href="https://wa.me/+529651033354" 
+          href="https://wa.me/+529651033354"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="WhatsApp Contact Paola ACP" // Agregar texto alternativo
+          aria-label="WhatsApp Contact Paola Canseco Penagos"
         >
           <FaWhatsapp />
         </a>
       </div>
       <div>
         <a
-          href="https://t.me/PaolaACP" 
+          href="https://t.me/PaolaACP"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Telegram Contact Paola ACP" // Agregar texto alternativo
+          aria-label="Telegram Contact Paola Canseco Penagos"
         >
           <FaTelegramPlane />
         </a>
       </div>
       <div>
         <a
-          href="/cv" 
+          href="/CV-PaolaCansecoPenagos.pdf"  
+          download="CV_PaolaCansecoPenagos.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Download CV of Paola ACP" // Agregar texto alternativo
+          aria-label="Download CV of Paola Canseco Penagos"
         >
           <HiDownload />
         </a>
