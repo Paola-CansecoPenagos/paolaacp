@@ -35,7 +35,7 @@ const Navbar = () => {
           alt="Logo"
           className="app__logo"
           width="150"
-          height="auto"
+          height="40"
         />
       </div>
       <ul className={`app__navbar-links ${mode}`}>
