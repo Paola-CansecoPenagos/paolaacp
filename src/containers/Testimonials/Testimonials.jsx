@@ -4,6 +4,7 @@ import { AppWrap, MotionWrap } from "../../wrapper";
 import "./Testimonials.scss";
 import { useTheme } from "../../hooks/useTheme";
 import { useTranslation } from "react-i18next";
+import { images } from "../../constants";
 
 const Testimonials = () => {
   const { t } = useTranslation();
@@ -11,19 +12,19 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      imageurl: "https://www.linkedin.com/in/asz/overlay/photo/",
+      imageurl: "",
       feedback: "Desde su primer día, Paola demostró gran compromiso, dedicación y capacidad para perfeccionar sus conocimientos en las herramientas que ya dominaba, así como para aprender nuevas tecnologías. Ello la llevó a posicionarse como encargada del área de tecnología en la empresa, liderando con éxito diversos proyectos. Su habilidad para iterar rápidamente, proponer mejoras y comunicarse de manera efectiva con los stakeholders la convierte en una profesional altamente recomendable y valiosa para cualquier organización",
-      name: "Alejandro Stewens",
-      company: "",
+      name: "FVNDY",
+      company: "Plataforma de relación con inversionistas",
     },
     {
-      imageurl: "https://via.placeholder.com/150",
-      feedback: "Una desarrolladora muy profesional, entregó antes del plazo.",
-      name: "María López",
-      company: "Creative Agency",
+      imageurl: images.alejandro,
+      feedback: "Durante su estancia en Grupo CYBAC, desempeñó un papel fundamental en el desarrollo de proyectos utilizando Laravel, demostrando un gran compromiso y habilidades en la implementación de soluciones backend. Además, colaboró en la maquetación del frontend, aplicando buenas prácticas de desarrollo y asegurando interfaces funcionales y atractivas. Su capacidad de aprendizaje y disposición para aplicar las enseñanzas recibidas fueron notables, aportando de manera positiva al equipo de trabajo. Gracias a su actitud proactiva y su interés en mejorar continuamente, contribuyó de manera significativa al éxito de los proyectos en los que participó.",
+      name: "Ing. Francisco Javier Reyes Hernández",
+      company: "Líder de Equipo de Programación de Grupo CYBAC",
     },
     {
-      imageurl: "https://via.placeholder.com/150",
+      imageurl: images.alejandro,
       feedback: "Excelente comunicación y calidad en el desarrollo web.",
       name: "Carlos Gómez",
       company: "Startup X",
@@ -43,7 +44,9 @@ const Testimonials = () => {
       {testimonials.length > 0 && (
         <>
           <div className={`app__testimonial-item ${mode} app__flex`}>
-            <img src={test.imageurl} alt="testimonial" />
+            {/* <picture>
+              <source srcSet={test.imageurl.webp} type="image/webp" />
+            </picture> */}
             <div className={`app__testimonial-content ${mode}`}>
               <p className={`p-text ${mode}`}>{test.feedback}</p>
               <div>

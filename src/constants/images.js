@@ -74,6 +74,7 @@ import fldchWebp from "../assets/fldch.webp";
 import cybactiWebp from "../assets/cybacti.webp";
 import inaoeWebp from "../assets/inaoe.webp";
 import fvndyWebp from "../assets/fvndy.webp";
+import alejandroWebp from "../assets/alejandro-stewens.webp";
 
 const images = {
   fvndy: { original: fvndy, webp: fvndyWebp },
@@ -109,6 +110,7 @@ const images = {
   inaoe: { original: inaoe, webp: inaoeWebp },
   cybacti: { original: cybacti, webp: cybactiWebp },
   logonavbar: { original: logonavbar, webp: logonavbarWebp },
+  alejandro: {webp: alejandroWebp},
 };
 
 export default images;
