@@ -23,12 +23,6 @@ const Testimonials = () => {
       name: "Ing. Francisco Javier Reyes Hernández",
       company: "Líder de Equipo de Programación de Grupo CYBAC",
     },
-    {
-      imageurl: images.alejandro,
-      feedback: "Excelente comunicación y calidad en el desarrollo web.",
-      name: "Carlos Gómez",
-      company: "Startup X",
-    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

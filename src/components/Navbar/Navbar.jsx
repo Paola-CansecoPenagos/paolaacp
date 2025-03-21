@@ -34,13 +34,13 @@ const Navbar = () => {
           src={require("../../assets/logonavdar.webp")}
           alt="Logo"
           className="app__logo"
-          width="100%"
+          width="150"
           height="auto"
         />
       </div>
       <ul className={`app__navbar-links ${mode}`}>
         {/* {["home", "about", "work", "skills", "testimonials", "contact"].map((item) => ( */}
-        {["home", "about", "work", "skills", "contact"].map((item) => (
+        {["home", "about", "work", "skills", "testimonials", "contact"].map((item) => (
           <li className={`app__flex p-text ${mode}`} key={`link-${item}`} style={{ display: "flex", alignItems: "center" }}>
             <a href={`#${item}`}>{t(item)}</a>
           </li>
@@ -75,7 +75,7 @@ const Navbar = () => {
             <HiX onClick={() => setToggle(false)} />
             <ul className={`app__navbar-links ${mode}`}>
               {/* {["home", "about", "work", "skills", "testimonials", "contact"].map((item) => ( */}
-              {["home", "about", "work", "skills", "contact"].map((item) => (
+              {["home", "about", "work", "skills", "testimonials", "contact"].map((item) => (
                 <li key={item} style={{ display: "flex", alignItems: "center" }}>
                   <a href={`#${item}`} onClick={() => setToggle(false)}>{t(item)}</a>
                 </li>
