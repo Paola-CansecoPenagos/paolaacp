@@ -1,4 +1,5 @@
 import React from "react";
+import { Analytics } from "@vercel/analytics/react";
 import { Navbar } from "./components";
 import {
   About,
@@ -12,7 +13,7 @@ import "./App.scss";
 
 const App = () => {
   return (
-    <div className={`app`}>
+    <div className="app">
       <Navbar />
       <Header />
       <About />
@@ -20,6 +21,7 @@ const App = () => {
       <Skills />
       <Testimonials />
       <Footer />
+      <Analytics />
     </div>
   );
 };
