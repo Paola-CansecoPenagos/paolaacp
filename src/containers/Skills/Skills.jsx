@@ -53,15 +53,20 @@ const Skills = () => {
       year: 2023,
       works: [
         {
+          name: "Full Stack Developer",
+          company: "FVNDY",
+          desc: "experiences.fvndy",
+        },
+        {
           name: "Back-end Developer",
           company: "INAOE",
           desc: "experiences.inaoe",
         },
-        {
-          name: "Back-end Developer",
-          company: "CYBAC TI",
-          desc: "experiences.cybacti1",
-        },
+        // {
+        //   name: "Back-end Developer",
+        //   company: "CYBAC TI",
+        //   desc: "experiences.cybacti1",
+        // },
       ],
     },
     {
@@ -69,23 +74,28 @@ const Skills = () => {
       works: [
         {
           name: "Full Stack Developer",
-          company: "FVNDY",
-          desc: "experiences.fvndy",
+          company: "CYBAC TI",
+          desc: "experiences.cybacti2",
         },
         {
           name: "Full Stack Developer",
-          company: "CYBAC TI",
-          desc: "experiences.cybacti2",
+          company: "FVNDY",
+          desc: "experiences.fvndy",
         },
       ],
     },
     {
       year: 2025,
       works: [
+        // {
+        //   name: "Full Stack Developer",
+        //   company: "FVNDY",
+        //   desc: "experiences.fvndy",
+        // },
         {
           name: "Full Stack Developer",
-          company: "FVNDY",
-          desc: "experiences.fvndy",
+          company: "CYBAC TI",
+          desc: "experiences.cybacti2",
         },
       ],
     },

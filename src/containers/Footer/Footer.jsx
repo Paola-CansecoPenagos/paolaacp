@@ -69,7 +69,7 @@ const Footer = () => {
             <source srcSet={images.mobile.webp} type="image/webp" />
             <img src={images.mobile.original} alt="mobile" />
           </picture>
-          <a href="tel: +52 9651033352" className="p-text">
+          <a href="tel: +52 9651033354" className="p-text">
             +52 965 103 33 54
           </a>
         </div>
